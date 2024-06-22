@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS Tuto</title>
     <link rel="stylesheet" href="public/styles.css" />
+    <script src="public/index.js" defer></script>
   </head>
   <body class="font-body">
     <div class="text-gray-700 grid md:grid-cols-3">
       <!-- <div> Wrapper de contenu Tailwindcss -->
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
-          <div>
-            <h1 class="font-bold uppercase p-4 border-b border-gray-300">
+          <div
+            class="flex justify-between items-center border-b border-gray-300"
+          >
+            <h1 class="font-bold uppercase p-4">
               <a href="http://" class="hover:text-gray-800"
                 >Mon super restaurant</a
               >
             </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="buttonMenu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul>
+          <ul class="hidden md:block" id="menu">
             <li class="text-gray-700 font-bold">
               <a
                 href="#"
