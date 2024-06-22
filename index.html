@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Tuto</title>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body class="font-body">
+    <div class="text-gray-700 grid md:grid-cols-3">
+      <!-- <div> Wrapper de contenu Tailwindcss -->
+      <div class="md:col-span-1">
+        <nav>
+          <div>
+            <h1 class="font-bold uppercase p-4 border-b border-gray-300">
+              <a href="http://" class="text-green-600">Mon super restaurant</a>
+            </h1>
+          </div>
+          <ul>
+            <li>
+              <a href="#"><span class="font-bold">Acceuil</span></a>
+            </li>
+            <li>
+              <a href="#"><span>A propos</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Contactez-nous</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+        <div class="flex justify-center md:justify-end">
+          <a href="#" class="text-primary">Se connecter</a>
+          <a href="#" class="text-primary ml-2">Creer un compte</a>
+        </div>
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recette</h2>
+          <h3 class="font-semibold">Pour les tailwinders</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border border-gray-400">
+            Les dernieres recettes
+          </h4>
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!-- Cartes de nos recettes -->
+            <div class="card">
+              <img
+                class="w-full h-32 sm:h-48 object-cover"
+                src="images/steak.jpg"
+                alt="Steak"
+              />
+              <div class="m-4">
+                <span class="font-bold block"> Steak Frites </span>
+                <span class="text-gray-500 text-sm">Recette par Odilson</span>
+              </div>
+              <div class="badge">
+                <span> 15 min </span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="w-full h-32 sm:h-48 object-cover"
+                src="images/salade.jpg"
+                alt="Steak"
+              />
+              <div class="m-4">
+                <span class="font-bold block"> Salade</span>
+                <span class="text-gray-500 text-sm">Recette par Julien</span>
+              </div>
+              <div class="badge">
+                <span> 5 min </span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="w-full h-32 sm:h-48 object-cover"
+                src="images/soupe.jpg"
+                alt="Steak"
+              />
+              <div class="m-4">
+                <span class="font-bold block"> Soupe </span>
+                <span class="text-gray-500 text-sm">Recette par Marie</span>
+              </div>
+              <div class="badge">
+                <span> 16 min </span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-12 pb-2 border border-gray-400">
+            Les recettes les plus populaires
+          </h4>
+          <div class="mt-8">
+            <!-- Cartes de nos recettes les plus populaires -->
+          </div>
+
+          <div class="flex justify-center">
+            <div class="bg-secondary-100 text-secondary-200">Plus</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
